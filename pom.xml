@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.talframework.tal</groupId>
+  <artifactId>tal-util-beans</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  
+  <name>Tal Bean Utils</name>
+  <description>Provides utilities for common operations, hiding underlying libraries</description>
+  
+  <dependencies>
+	<!-- Brings in Spring-Beans - would like not to use this -->
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-beans</artifactId>
+  		<version>[3.0.2.RELEASE,4)</version>
+	</dependency>  	
+  </dependencies>
+  
+  <build>
+  	<plugins>
+  	  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0</version>
+        <configuration>
+          <tagBase>https://dev.tpspencer.org/svn/tal/tal-util-beans/tags</tagBase>
+        </configuration>
+      </plugin>
+	</plugins>
+  </build>
+  
+  <distributionManagement>
+    <repository>
+      <id>releaseRepo</id>
+      <name>Releases Repository</name>
+      <url>scpexe://tps.tpspencer.com/var/maven/repo/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <id>snapshotRepo</id>
+      <name>Snapshot Snapshots</name>
+      <url>scpexe://tps.tpspencer.com/var/maven/snap_repo/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+  
+    <site>
+      <id>siteServer</id>
+      <url>scpexe://tps.tpspencer.com/home/tspencer/site/tal-util-beans</url>
+    </site>
+  </distributionManagement>
+  
+  <developers>
+  	<developer>
+  		<id>TPS</id>
+  		<name>Tom Spencer</name>
+  		<email>tom@tpspencer.com</email>
+  		<url>http://www.tpspencer.com</url>
+  		<roles>
+  			<role>Architect</role>
+  			<role>Project Manager</role>
+  		</roles>
+  	</developer>
+  </developers>
+  
+  <scm>
+  	<connection>scm:svn:https://dev.tpspencer.org/svn/tal/tal-util-beans/trunk/</connection>
+  	<developerConnection>scm:svn:https://dev.tpspencer.org/svn/tal/tal-util-beans/trunk/</developerConnection>
+  	<url>https://dev.tpspencer.org/svn/tal/tal-util-beans/trunk/</url>
+  </scm>
+</project>
