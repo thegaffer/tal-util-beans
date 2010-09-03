@@ -36,8 +36,10 @@ License
 
   The license is also available {{{./license.apt}here}}
   
-  In addition tal-aspects directly uses the following elements:
+  In addition tal-util-beans directly uses the following elements:
   
     * Apache Commons Logging - Apache License v2, {{http://commons.apache.org/logging/license.html}}
     
-    * Spring Framework 3 - Apache License v2, {{http://www.apache.org/licenses/LICENSE-2.0.html}} 
+    * Spring Framework 3 - Apache License v2, {{http://www.apache.org/licenses/LICENSE-2.0.html}}
+    
+  Those projects in turn contain details on their dependencies. 
