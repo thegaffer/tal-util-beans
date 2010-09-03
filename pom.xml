@@ -12,7 +12,7 @@
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-beans</artifactId>
-  		<version>[3.0.2.RELEASE,4)</version>
+  		<version>3.0.3.RELEASE</version>
 	</dependency>  	
   </dependencies>
   
