@@ -57,6 +57,7 @@
       <url>scpexe://tps.tpspencer.com/home/tspencer/site/tal-util-beans</url>
     </site>
   </distributionManagement>
+  <url>http://www.tpspencer.com/site/tal-util-beans/index.html</url>
   
   <developers>
   	<developer>

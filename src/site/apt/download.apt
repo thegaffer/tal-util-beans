@@ -1,0 +1,23 @@
+Installation
+
+  I use Maven to build and release my software and encourage you to do this same. To
+  get hold of any element of the Tal Framework you need to point to my Maven
+  repository. There are two ways to do this; firstly by adding the repository 
+  definition to your pom.xml files, or secondly (and more preferred) is to use 
+  Nexus (or similar) and point that to proxy my repository. The details of the
+  repository are:
+  
+  * Release Repository - http://dev.tpspencer.org/maven/repo/
+  
+  * Snapshot Repository - http://dev.tpspencer.org/maven/snap_repo/
+  
+  Both are standard Maven2 layouts.
+  
+  The relevant Maven declarations (excluding version) then are:
+  
++--
+<dependency>
+  <groupId>org.talframework.tal</groupId>
+  <artifactId>tal-util-beans</artifactId>
+</dependency>
++--

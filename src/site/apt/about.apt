@@ -1,0 +1,19 @@
+  In my own work I prefer not to directly use third-party software directly in
+  my source code. The Tal Framework then represents some of the shared utility
+  elements I use in other projects. There may be alternatives to the utilities
+  within here, but I don't want my source code to become entwined with any
+  specific framework as it then becomes a constraint on my software.
+  
+  Please note this is not an anti- open-source declaration. I am a strong
+  proponent of using as much open-source as possible. But, my view over the
+  use of open-source is that it is plugged together at runtime. Many open
+  source libraries actually encourage this view and provide ways to ensure
+  that your source code does not directly need to depend upon it. The recent
+  trend is to use annotations, and where possible independent and preferably
+  JSR annotations, to mark intent in your classes - of course if there is no
+  open spec annotation a custom one is required which brings the dependency
+  back in. There will of course be exceptions to this rule.
+  
+  As a result I do not encourage direct usage of base Tal Framework libraries
+  outside of my projects, but feel free to copy the code if it's useful to you,
+  I've marked everything with the Apache License v2.

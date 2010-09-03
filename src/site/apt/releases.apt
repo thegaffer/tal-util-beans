@@ -1,0 +1,12 @@
+Releases
+
+  The current release is 0.9 and was made in April 2010. However, due to an environment
+  issue I had to re-release this in September 2010.
+  
+Release 0.9 - April 2010
+
+  This is effectively the first version
+  
+    * Basic mapper interface
+    
+    * Utilities for dealing with property/field values and basic conversion

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Objex">
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-application-skin</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </skin>
+  
+  <bannerLeft>
+    <name>TAL Framework - Aspects</name>
+    <src>images/project-logo.png</src>
+    <href>http://www.tpspencer.com/site/tal-util-beans/index.html</href>
+  </bannerLeft>
+  <bannerRight>
+    <src>images/tal-project.png</src>
+  </bannerRight>
+  
+  <body>
+    <links>
+      <item name="Tom Spencer" href="http://www.tpspencer.com/" />
+      <item name="Tal UI" href="http://www.tpspencer.com/site/talui/" />
+      <item name="Tal Objex" href="http://www.tpspencer.com/site/objexj/" />
+    </links>
+    
+    <menu name="Objex">
+      <item name="Welcome" href="/index.html"/>
+      <item name="Usage" href="/usage.html"/>
+      <item name="Download" href="/download.html"/>
+      <item name="Releases" href="/releases.html" />
+      <item name="Road Map" href="/roadmap.html" />
+      <item name="General Information" href="/about.html"/>
+      <item name="License" href="/license.html"/>
+    </menu>
+    
+    <menu ref="reports"/>
+  </body>
+</project>
