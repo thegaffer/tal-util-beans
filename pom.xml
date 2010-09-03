@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.talframework.tal</groupId>
   <artifactId>tal-util-beans</artifactId>
-  <version>0.9</version>
+  <version>1.0-SNAPSHOT</version>
   
   <name>Tal Bean Utils</name>
   <description>Provides utilities for common operations, hiding underlying libraries</description>
@@ -73,8 +73,8 @@
   </developers>
   
   <scm>
-  	<connection>scm:svn:https://dev.tpspencer.org/svn/tal/tal-util-beans/tags/tal-util-beans-0.9</connection>
-  	<developerConnection>scm:svn:https://dev.tpspencer.org/svn/tal/tal-util-beans/tags/tal-util-beans-0.9</developerConnection>
-  	<url>https://dev.tpspencer.org/svn/tal/tal-util-beans/tags/tal-util-beans-0.9</url>
+  	<connection>scm:svn:https://dev.tpspencer.org/svn/tal/tal-util-beans/trunk/</connection>
+  	<developerConnection>scm:svn:https://dev.tpspencer.org/svn/tal/tal-util-beans/trunk/</developerConnection>
+  	<url>https://dev.tpspencer.org/svn/tal/tal-util-beans/trunk/</url>
   </scm>
 </project>
