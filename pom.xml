@@ -7,6 +7,15 @@
   <name>Tal Bean Utils</name>
   <description>Provides utilities for common operations, hiding underlying libraries</description>
   
+  <licenses>
+	<license>
+		<name>Apache 2</name>
+		<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		<distribution>repo</distribution>
+		<comments>A business-friendly OSS license</comments>
+	</license>
+  </licenses>
+  
   <dependencies>
 	<!-- Brings in Spring-Beans - would like not to use this -->
   	<dependency>
