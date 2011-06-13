@@ -1,4 +1,28 @@
+/**
+ * Copyright (C) 2011 Tom Spencer <thegaffer@tpspencer.com>
+ *
+ * This file is part of TAL.
+ *
+ * TAL is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * TAL is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with TAL. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Note on dates: Year above is the year this code was built. This
+ * project first created in 2008. Code was created between these two
+ * years inclusive.
+ */
 package org.talframework.util.properties;
+
+import java.text.MessageFormat;
 
 /**
  * This class contains a bunch of handy methods for
@@ -11,7 +35,20 @@ package org.talframework.util.properties;
  * @author Tom Spencer
  */
 public final class PropertyUtil {
-
+    
+    /**
+     * Helper to cleanse a property value to ensure it is not null,
+     * throwing an error if it does.
+     * 
+     * @param val
+     * @param message
+     * @return
+     */
+    public static <T> T getExpected(T val, String message, Object... params) {
+        if( val == null ) throw new IllegalArgumentException(MessageFormat.format(message, params));
+        return val;
+    }
+    
     /**
      * Takes an input value and returns it as a string.
      * Optionally this will return null if the string is
@@ -24,6 +61,23 @@ public final class PropertyUtil {
     public static String getString(Object val, boolean emptyAsNull) {
         String ret = val != null ? val.toString() : null;
         if( emptyAsNull && ret != null && ret.length() == 0 ) ret = null;
+        return ret;
+    }
+    
+    /**
+     * Takes an input value and returns it as a string.
+     * Optionally this will return null if the string is
+     * empty. If, having done this, we have a null string
+     * then an exception is raised.
+     * 
+     * @param val The value
+     * @param emptyAsNull Indicates if we should null empty strings
+     * @param message The message to use if it is null
+     * @return The string value
+     */
+    public static String getExpectedString(Object val, boolean emptyAsNull, String message, Object... params) {
+        String ret = getString(val, emptyAsNull);
+        if( ret == null ) throw new IllegalArgumentException(MessageFormat.format(message, params));
         return ret;
     }
     
