@@ -1,0 +1,6 @@
+TAL Util Beans; tal-util-beans
+Copyright (C) Thomas Spencer, 2011
+License: GPL v3, see LICENSE
+
+TAL Util Beans contains some low level wrappers and utilities for dealing
+with JavaBeans that I use in other projects.
